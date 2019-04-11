@@ -1,0 +1,9 @@
+
+.clear:hover {
+    color: red;
+    background: #eff;
+}
+#submit{
+  position: absolute;
+  left: 50px;
+}

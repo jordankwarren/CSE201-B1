@@ -1,25 +1,6 @@
-<%php
-$servername = "localhost";
-$username = "cse383";
-$password = "HoABBHrBfXgVwMSz";
-$dbname = "cse383";
-// 创建链接
-$conn = new mysqli($servername, $username, $password, $dbname);
-// 检查链接
-if ($conn->connect_error) {
-    die("连接失败: " . $conn->connect_error);
-} 
- 
-$sql = "INSERT INTO userinfor(email, usrname, password)
-VALUES ('$_POST[email]', '$_POST[usrname]', '$_POST[psw]');";
 
-if ($conn->multi_query($sql) === TRUE) {
-    echo "新记录插入成功";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-$conn->close();
-%>
+
+
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="css/normalize.css" >
 <link rel="stylesheet" href="css/signUpForm.css" >
@@ -32,13 +13,13 @@ $conn->close();
   <hr>
 
   <label for="email"><b>Email</b></label>
-  <input type="text" placeholder="Enter Email" name="email" required>
+  <input type="email" placeholder="Enter Email" name="email" required>
 		
   <label for="usrname"><b>User Name</b></label>
-  <input type="text" placeholder="Enter User Name" name="usrname" required>
+  <input type="usrname" placeholder="Enter User Name" name="usrname" required>
 		
   <label for="psw"><b>Password</b></label>
-  <input type="password" placeholder="Enter Password" name="psw" required>
+  <input type="psw" placeholder="Enter Password" name="psw" required>
 
   <label for="psw-repeat"><b>Repeat Password</b></label>
   <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
@@ -56,3 +37,29 @@ $conn->close();
 </div>
 </form>
 </html>
+<?php
+$servername = "localhost";
+$username = "cse383";
+$password = "HoABBHrBfXgVwMSz";
+$dbname = "cse383";
+$email="";
+$usrname="";
+$psw="";
+// create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// check connection
+if ($conn->connect_error) {
+    die("fail to connect: " . $conn->connect_error);
+} 
+ 
+$sql = "INSERT INTO userinfor(email, usrname, password)
+VALUES ('$_POST[email]', '$_POST[usrname]', '$_POST[psw]');";
+
+if ($conn->multi_query($sql) === TRUE) {
+  
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+ 
+$conn->close();
+?>
