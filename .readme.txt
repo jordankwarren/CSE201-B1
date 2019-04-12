@@ -1,1 +1,2 @@
 	Our application NBA Player Sorter will allow user to search, sort or filt the NBA players. If Users are already registed an account already, then they will be able to create a team with 5 palyers they selected. User with an account can also select a player as their favorite player.
+	-group b1
