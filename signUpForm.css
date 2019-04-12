@@ -17,5 +17,8 @@
 }
 #submit{
   position: absolute;
-  left: 50px;
+  left: 70px;
+  height: 10px;
+  padding: 20px;
+  top: 154px;
 }
