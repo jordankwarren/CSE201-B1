@@ -1,27 +1,32 @@
-
-
-.playerP{
+.playerB{
+  color: black !important;
+  text-transform: uppercase;
+  background: #edb349;
+  padding: 15px;
+  border-radius: 30px;
+  display: inline-block;
+  border: none;
   position: absolute;
-  top: 140px;
-  font-size: 25px;
-  font-family: lucida console;
+  top: 55px;
+  left: 100px;
 }
 
 body{
-  background-color: #ebefea;
+  background-color: white;
 }
-h1{
+h1
+{
   position: absolute;
   right: 600px;
   font-size: 30px;
   top: 15px;
   font-family: lucida console;
-  background-color: #fcdd8f;
+  background-color: #ed6749;
   padding: 22px;
   border-radius: 20px;
 }
 nav{
-  background-color: #e2b544;
+  background-color: #1156c4;
   padding: 50px;
   width: 95%;
   position: absolute;
@@ -32,51 +37,38 @@ nav{
   border-color: black;
 }
 
-.login{
+
+.loginA{
+  color: black !important;
+  text-transform: uppercase;
+  background: #edb349;
+  padding: 15px;
+  border-radius: 30px;
+  display: inline-block;
+  border: none;
+  right: 50px;
+  top: 55px;
   position: absolute;
-  right: 75px;
-  top:10px;
-  font-size: 20px;
 }
-#log{
-  font-size: 15px;
-  border-radius: 8px;
-  float: below;
-  position: absolute;
-  top: 100px;
-  background-color: White;
-}
-#log:hover{
-  background-color: #40cc39;
-  cursor: pointer;
-
-}
-
-.submitBut{
-  height: 20px;
-  left: 155px;
-  top:0px;
-  position: absolute;
-
-
-}
-.homesearch{
-  position: absolute;
-  left: 150px;
-  top: 170px;
-  height: 30px;
-
+.login:hover{
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 0px 10px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 0px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
 
 }
 
 .signUpButton{
 color: black !important;
 text-transform: uppercase;
-background: #e06902;
+background: #edb349;
 padding: 15px;
 border-radius: 30px;
 display: inline-block;
 border: none;
+position: absolute;
+right: 140px;
+top: 55px;
 }
 .signupB:hover{
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
@@ -85,22 +77,15 @@ border: none;
 transition: all 0.4s ease 0s;
 
 }
-li:hover{
-  background-color: #e2b5b3;
-  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
--webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.57);
--moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.57);
-transition: all 0.4s ease 0s;
-padding: 5px;
-width: px;
-cursor: pointer;
-}
+
+
 .news{
   position: absolute;
-  right: 300px;
-  top: 140px;
-  font-size: 25px;
+  right: 280px;
+  top: 130px;
+  font-size: 35px;
   font-style: lucida console;
+  color: black;
 
 }
 .newsBox{
@@ -114,12 +99,16 @@ cursor: pointer;
   background-color: white;
   font-size: 30px;
   border-radius: 4px;
+  text-align: center;
 }
 .newsBoxPic{
   position: absolute;
   height:250px;
-  right: 50px;
+  right: 25px;
   bottom: 100px;
+}
+.newsTag{
+  color: #ed6749;
 }
 
 
