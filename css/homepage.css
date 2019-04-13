@@ -1,26 +1,12 @@
 
-.list1 {
-list-style-type: none;
-border: black 1px;
-border-style: solid;
-border-spacing: 5px;
-width: 40%;
-text-align: left;
-position: absolute;
-font-size: 20px;
-top: 180px;
-}
+
 .playerP{
   position: absolute;
   top: 140px;
   font-size: 25px;
+  font-family: lucida console;
 }
-.statsP{
-  position: absolute;
-  top: 143px;
-  right: 590px;
-  font-size: 25px;
-}
+
 body{
   background-color: #ebefea;
 }
@@ -28,7 +14,22 @@ h1{
   position: absolute;
   right: 600px;
   font-size: 30px;
-  font-family: verdana;
+  top: 15px;
+  font-family: lucida console;
+  background-color: #fcdd8f;
+  padding: 22px;
+  border-radius: 20px;
+}
+nav{
+  background-color: #e2b544;
+  padding: 50px;
+  width: 95%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 570px;
+  border-bottom: solid 7px;
+  border-color: black;
 }
 
 .login{
@@ -47,23 +48,10 @@ h1{
 }
 #log:hover{
   background-color: #40cc39;
-  background: url(cd ./img/jordan.png) no-repeat;
+  cursor: pointer;
 
 }
-.list2{
-  list-style-type: none;
-  border-color: black;
-  border-style: solid;
-  position: absolute;
-  float: left;
-  right: 20px;
-  width: 40%;
-  font-size: 20px;
-font-weight: none;
-border-width: 1px;
-top: 180px;
 
-}
 .submitBut{
   height: 20px;
   left: 155px;
@@ -80,12 +68,6 @@ top: 180px;
 
 
 }
-img{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
 
 .signUpButton{
 color: black !important;
@@ -101,18 +83,50 @@ border: none;
 -webkit-box-shadow: 0px 0px 10px -10px rgba(0,0,0,0.57);
 -moz-box-shadow: 0px 5px 0px -10px rgba(0,0,0,0.57);
 transition: all 0.4s ease 0s;
-background: url(cd ../img/jordan.png);
+
 }
 li:hover{
   background-color: #e2b5b3;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+padding: 5px;
+width: px;
+cursor: pointer;
 }
+.news{
+  position: absolute;
+  right: 300px;
+  top: 140px;
+  font-size: 25px;
+  font-style: lucida console;
 
+}
+.newsBox{
+  border: solid 1px;
+  border-color: black;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 100px;
+  top: 175px;
+  background-color: white;
+  font-size: 30px;
+  border-radius: 4px;
+}
+.newsBoxPic{
+  position: absolute;
+  height:250px;
+  right: 50px;
+  bottom: 100px;
+}
 
 
 .center{
   position: absolute;
-   height:180px;
-   top:110px;
+   height:250px;
+   top:160px;
   right: 680px;
   margin-left: auto;
   margin-right: auto;
