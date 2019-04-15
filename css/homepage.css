@@ -110,13 +110,50 @@ transition: all 0.4s ease 0s;
 .newsTag{
   color: #ed6749;
 }
+.cediPic{
+  position: absolute;
+  height:200px;
+  width: 220px;
+  left: 250px;
+  top: 150px;
+}
+.kyriePic{
+  position: absolute;
+  height:200px;
+  width: 160px;
+  left: 500px;
+  top: 150px;
+}
+.greekPic{
+  position: absolute;
+  height:200px;
+  width: 200px;
+  left: 20px;
+  top: 150px;
+}
+.benPic{
+  position: absolute;
+  height:250px;
+  width: 300px;
+  left: 20px;
+  top: 400px;
+  radius: 10px;
+}
+.wadePic{
+  position: absolute;
+  height:250px;
+  width: 370px;
+  left: 350px;
+  top: 400px;
+  radius: 10px;
+}
 
 
 .center{
   position: absolute;
    height:250px;
    top:160px;
-  right: 680px;
+  right: 630px;
   margin-left: auto;
   margin-right: auto;
   display: block;
