@@ -1,39 +1,47 @@
 .playerB{
   color: black !important;
   text-transform: uppercase;
-  background: #edb349;
+  background: #e01f1f;
   padding: 15px;
-  border-radius: 30px;
+  border-radius: 20px;
   display: inline-block;
-  border: none;
+  border: solid 2px;
   position: absolute;
   top: 55px;
   left: 100px;
+  font-family: Verdana;
+
 }
 
 body{
-  background-color: white;
+  background-color: #e8e5e5;
 }
 h1
 {
   position: absolute;
-  right: 600px;
+  right: 560px;
   font-size: 30px;
-  top: 15px;
-  font-family: lucida console;
-  background-color: #ed6749;
+  top: 10px;
+
+  color: black;
+  font-family: Verdana;
+  background-color: #e01f1f;
   padding: 22px;
+  border: solid 3px;
+  border-color: black;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: white;
   border-radius: 20px;
 }
 nav{
-  background-color: #1156c4;
+  background-color: #0a6ad6;
   padding: 50px;
   width: 95%;
   position: absolute;
   top: 0px;
   left: 0px;
   bottom: 570px;
-  border-bottom: solid 7px;
+  border-bottom: solid 3px;
   border-color: black;
 }
 
@@ -41,14 +49,15 @@ nav{
 .loginA{
   color: black !important;
   text-transform: uppercase;
-  background: #edb349;
+  background: #e01f1f;
   padding: 15px;
-  border-radius: 30px;
+  border-radius: 20px;
   display: inline-block;
-  border: none;
+  border:  solid 2px;
   right: 50px;
   top: 55px;
   position: absolute;
+  font-family: Verdana;
 }
 .login:hover{
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
@@ -61,14 +70,15 @@ transition: all 0.4s ease 0s;
 .signUpButton{
 color: black !important;
 text-transform: uppercase;
-background: #edb349;
+background: #e01f1f;
 padding: 15px;
-border-radius: 30px;
+border-radius: 20px;
 display: inline-block;
-border: none;
+border: solid 2px;
 position: absolute;
 right: 140px;
 top: 55px;
+font-family: Verdana;
 }
 .signupB:hover{
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
@@ -77,14 +87,36 @@ top: 55px;
 transition: all 0.4s ease 0s;
 
 }
+.highlightHead{
+  position: absolute;
+  left: 360px;
+  top: 130px;
+  font-size: 35px;
+  font-family: Verdana;
+  color: black;
 
+}
+.highlightBox{
+  border: solid 1px;
+  border-color: black;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 200px;
+  top: 175px;
+  background-color: white;
+  font-size: 30px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: Verdana;
+}
 
 .news{
   position: absolute;
-  right: 280px;
+  right: 340px;
   top: 130px;
   font-size: 35px;
-  font-style: lucida console;
+  font-family: Verdana;
   color: black;
 
 }
@@ -94,66 +126,67 @@ transition: all 0.4s ease 0s;
   position: absolute;
   width: 500px;
   height: 500px;
-  right: 100px;
+  right: 200px;
   top: 175px;
   background-color: white;
   font-size: 30px;
   border-radius: 4px;
   text-align: center;
+  font-family: Verdana;
 }
 .newsBoxPic{
   position: absolute;
   height:250px;
   right: 25px;
-  bottom: 100px;
+  bottom: 20px;
 }
 .newsTag{
   color: #ed6749;
 }
 .cediPic{
   position: absolute;
-  height:200px;
+  height:250px;
   width: 220px;
   left: 250px;
-  top: 150px;
+  top: 1200px;
 }
 .kyriePic{
   position: absolute;
-  height:200px;
+  height:250px;
   width: 160px;
-  left: 500px;
-  top: 150px;
+  right: 300px;
+  top: 1200px;
 }
 .greekPic{
   position: absolute;
-  height:200px;
+  height:250px;
   width: 200px;
-  left: 20px;
-  top: 150px;
+  left: 600px;
+  top: 1200px;
 }
 .benPic{
   position: absolute;
-  height:250px;
-  width: 300px;
-  left: 20px;
-  top: 400px;
+  height:300px;
+  width: 400px;
+  left: 200px;
+  top: 800px;
   radius: 10px;
 }
 .wadePic{
   position: absolute;
-  height:250px;
-  width: 370px;
-  left: 350px;
-  top: 400px;
+  height:310px;
+  width: 430px;
+  left: 800px;
+  top: 800px;
   radius: 10px;
 }
 
 
 .center{
   position: absolute;
-   height:250px;
-   top:160px;
-  right: 630px;
+   height:120px;
+   top:7px;
+  left: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;
