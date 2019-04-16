@@ -149,6 +149,12 @@ transition: all 0.4s ease 0s;
   width: 220px;
   left: 250px;
   top: 1200px;
+  transition: transform .25s ease;
+
+}
+.cediPic:hover  {
+  -webkit-transform-scale(1.5);
+  transform:scale(1.5);
 }
 .kyriePic{
   position: absolute;
@@ -156,13 +162,24 @@ transition: all 0.4s ease 0s;
   width: 160px;
   right: 300px;
   top: 1200px;
+  transition: transform .25s ease;
+
+}
+.kyriePic:hover  {
+  -webkit-transform-scale(1.5);
+  transform:scale(1.5);
 }
 .greekPic{
   position: absolute;
-  height:250px;
+  height:280px;
   width: 200px;
   left: 600px;
   top: 1200px;
+  transition: transform .25s ease;
+}
+.greekPic:hover  {
+  -webkit-transform-scale(1.5);
+  transform:scale(1.5);
 }
 .benPic{
   position: absolute;
