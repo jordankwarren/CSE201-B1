@@ -29,7 +29,7 @@
 
   <div class="completeSignUp">
     <form action="db.php">
-      <input type="submit" name="submit" value="submit" onclick="javascrtpt:window.location.href='logUserHome.html'">
+      <input type="submit" name="submit" value="submit" onclick="javascrtpt:window.location.href='loggedInWebpage.html'">
       </form>
     </div>
 </div>
