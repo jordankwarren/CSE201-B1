@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="css/normalize.css" >
 <link rel="stylesheet" href="css/signUpForm.css" >
 <html>
-<form  method="POST" action=''user.php'>
+<form  method="POST" action='user.php'>
 <div class="container">
 	<div align="center">
   <h1>Sign Up</h1>
