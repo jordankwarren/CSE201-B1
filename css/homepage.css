@@ -10,9 +10,14 @@
   top: 55px;
   left: 100px;
   font-family: Verdana;
+}
+.playerB:hover{
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 0px 10px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 0px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
 
 }
-
 body{
   background-color: #e8e5e5;
 }
@@ -37,6 +42,7 @@ nav{
   background-color: #0a6ad6;
   padding: 50px;
   width: 95%;
+  height: 8%;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -100,8 +106,8 @@ transition: all 0.4s ease 0s;
   border: solid 1px;
   border-color: black;
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 35%;
+  height: 317%;
   left: 200px;
   top: 175px;
   background-color: white;
@@ -124,8 +130,8 @@ transition: all 0.4s ease 0s;
   border: solid 1px;
   border-color: black;
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 35%;
+  height: 317%;
   right: 200px;
   top: 175px;
   background-color: white;
@@ -136,8 +142,8 @@ transition: all 0.4s ease 0s;
 }
 .newsBoxPic{
   position: absolute;
-  height:250px;
-  right: 25px;
+  height:50%;
+  right: 30px;
   bottom: 20px;
 }
 .newsTag{
@@ -145,8 +151,8 @@ transition: all 0.4s ease 0s;
 }
 .cediPic{
   position: absolute;
-  height:250px;
-  width: 220px;
+  height:170%;
+  width: 20%;
   left: 250px;
   top: 1200px;
   transition: transform .25s ease;
@@ -158,9 +164,9 @@ transition: all 0.4s ease 0s;
 }
 .kyriePic{
   position: absolute;
-  height:250px;
-  width: 160px;
-  right: 300px;
+  height:160%;
+  width: 15%;
+  right: 250px;
   top: 1200px;
   transition: transform .25s ease;
 
@@ -171,8 +177,8 @@ transition: all 0.4s ease 0s;
 }
 .greekPic{
   position: absolute;
-  height:280px;
-  width: 200px;
+  height:170%;
+  width: 18%;
   left: 600px;
   top: 1200px;
   transition: transform .25s ease;
@@ -185,7 +191,7 @@ transition: all 0.4s ease 0s;
   position: absolute;
   height:300px;
   width: 400px;
-  left: 200px;
+  left: 260px;
   top: 800px;
   radius: 10px;
 }
@@ -197,15 +203,13 @@ transition: all 0.4s ease 0s;
   top: 800px;
   radius: 10px;
 }
-
-
+.highVid{
+  width: 100%;
+  height: 50%;
+}
 .center{
   position: absolute;
-   height:120px;
+   height:80%;
    top:7px;
   left: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-
 }
