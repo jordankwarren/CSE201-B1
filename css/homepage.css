@@ -189,16 +189,16 @@ transition: all 0.4s ease 0s;
 }
 .benPic{
   position: absolute;
-  height:300px;
-  width: 400px;
-  left: 260px;
+  height:200%;
+  width: 30%;
+  left: 230px;
   top: 800px;
   radius: 10px;
 }
 .wadePic{
   position: absolute;
-  height:310px;
-  width: 430px;
+  height:205%;
+  width: 30%;
   left: 800px;
   top: 800px;
   radius: 10px;
