@@ -14,10 +14,10 @@
 
   <label for="email"><b>Email</b></label>
   <input type="email" placeholder="Enter Email" name="email" required>
-		
+
   <label for="usrname"><b>User Name</b></label>
   <input type="usrname" placeholder="Enter User Name" name="usrname" required>
-		
+
   <label for="psw"><b>Password</b></label>
   <input type="psw" placeholder="Enter Password" name="psw" required>
 
@@ -26,10 +26,10 @@
 
   <div class="clear">
 		<input type="button" value="Cancel" onclick="javascrtpt:window.location.href='nbaWebsite.html'">
-  
+
   <div class="completeSignUp">
     <form action="db.php">
-      <input type="submit" name="submit" value="submit">
+      <input type="submit" name="submit" value="submit" onclick="javascrtpt:window.location.href='logUserHome.html'">
       </form>
     </div>
 </div>
@@ -50,16 +50,16 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // check connection
 if ($conn->connect_error) {
     die("fail to connect: " . $conn->connect_error);
-} 
- 
+}
+
 $sql = "INSERT INTO userinfor(email, usrname, password)
 VALUES ('$_POST[email]', '$_POST[usrname]', '$_POST[psw]');";
 
 if ($conn->multi_query($sql) === TRUE) {
-  
+
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
- 
+
 $conn->close();
 ?>

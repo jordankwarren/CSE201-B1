@@ -22,7 +22,7 @@ else{
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            echo "<a href='nbaWebsite.html'> homepage</a>";
+            echo "<a href='logUserHome.html'> homepage</a>";
 			}
 		else {
 			 echo "<a href='login.html'> login page</a>";
