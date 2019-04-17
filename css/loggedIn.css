@@ -73,7 +73,7 @@ transition: all 0.4s ease 0s;
 
 }
 
-.signUpButton{
+.createB{
 color: black !important;
 text-transform: uppercase;
 background: #e01f1f;
@@ -82,11 +82,11 @@ border-radius: 20px;
 display: inline-block;
 border: solid 2px;
 position: absolute;
-right: 140px;
+right: 180px;
 top: 55px;
 font-family: Verdana;
 }
-.signupB:hover{
+.createB:hover{
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 -webkit-box-shadow: 0px 0px 10px -10px rgba(0,0,0,0.57);
 -moz-box-shadow: 0px 5px 0px -10px rgba(0,0,0,0.57);
@@ -172,16 +172,38 @@ transition: all 0.4s ease 0s;
 .newsTag{
   color: #ed6749;
 }
-.cediPic{
+.Playoffs{
+  position: absolute;
+  right: 700px;
+  top: 700px;
+  font-size: 35px;
+  font-family: Verdana;
+  color: black;
+}
+.playoffBox{
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  right: 0px;
+  top: 770px;
+}
+.playoffPic{
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right:0;
+  position: absolute;
+}
+.kawPic{
   position: absolute;
   height:170%;
   width: 20%;
-  left: 250px;
+  left: 150px;
   top: 1200px;
   transition: transform .25s ease;
 
 }
-.cediPic:hover  {
+.kawPic:hover  {
   -webkit-transform-scale(1.5);
   transform:scale(1.5);
 }
@@ -189,7 +211,7 @@ transition: all 0.4s ease 0s;
   position: absolute;
   height:160%;
   width: 15%;
-  right: 250px;
+  right: 150px;
   top: 1200px;
   transition: transform .25s ease;
 

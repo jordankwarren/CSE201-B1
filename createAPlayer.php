@@ -38,7 +38,6 @@ if($_POST["dataform"]) {
       <input type="text" name="avg steals" placeholder="avg steals"/>
       <label for="avg blocks"><b>Avg Blocks</b></label>
       <input type="text" name="avg blocks" placeholder="avg blocks"/>
-      <button>Create</button>
       <input type="submit">
     </form>
   </div>
