@@ -1,11 +1,47 @@
 <?php
-if($_POST["dataform"]) {
-  mail("jordankw@miamioh.edu", "Player Data", $_POST["dataform"], "From:
-    playerdata@nbaproject.com");
-  mail("huangw11@miamioh.edu", "Player Data", $_POST["dataform"], "From:
-    playerdata@nbaproject.com");
-  mail("rooptb@miamioh.edu", "Player Data", $_POST["dataform"], "From:
-    playerdata@nbaproject.com");
+if(isset($_POST['name']) && isset($_POST['team']) && isset($_POST['position'])
+&& isset($_POST['height']) && isset($_POST['avg points']) &&
+isset($_POST['avg assists']) && isset($_POST['avg assists']) &&
+isset($_POST['avg rebounds']) && isset($_POST['avg steals']) &&
+isset($_POST['avg blocks'])) {
+  $name = $_POST['name'];
+  $team = $_POST['team'];
+  $position = $_POST['position'];
+  $height = $_POST['height'];
+  $avg_pts = $_POST['avg points'];
+  $avg_asts = $_POST['avg assists'];
+  $avg_rebs = $_POST['avg rebounds'];
+  $avg_stls = $_POST['avg steals'];
+  $avg_blks = $_POST['avg blocks'];
+  $to = 'jordankw@miamioh.edu, huangw11@miamioh.edu, rooptb@miamioh.edu';
+  $subject = 'New Player Data';
+  $body = '<html>
+            <body>
+              <h2>Player Data</h2>
+              <hr>
+              <p>Name:<br>'.$name.'</p>
+              <p>Position:<br>'.$position.'</p>
+              <p>Height:<br>'.$height.'</p>
+              <p>Avg Points:<br>'.$avg_pts.'</p>
+              <p>Avg Assists:<br>'.$avg_asts.'</p>
+              <p>Avg Rebounds:<br>'.$avg_rebs.'</p>
+              <p>Avg Steals:<br>'.$avg_stls.'</p>
+              <p>Avg Blocks:<br>'.$avg_blks.'</p>
+            </body>
+          </html>';
+
+  $headers = "From: playerdata@nbaproject.com\r\n";
+  $headers .= "Reply-To: playerdata@nbaproject.com\r\n";
+  $headers .= "MIME-Version: 1.0\r\n";
+  $headers .= "Content-type: text/html; charset=utf-8";
+
+  $send = mail($to, $subject, $body, $headers);
+  if($send) {
+    echo '<br>';
+    echo 'Thanks for adding!';
+  } else {
+    echo 'error';
+  }
 }
 ?>
 
@@ -18,7 +54,6 @@ if($_POST["dataform"]) {
 </head>
 <body>
   <div class="login-page">
-  <div class="form">
     <form method="post" name="dataform" action="createAPlayer.php">
       <label for="name"><b>Name</b></label>
       <input type="text" name="name" placeholder="name"/>
@@ -41,5 +76,4 @@ if($_POST["dataform"]) {
       <input type="submit">
     </form>
   </div>
-</div>
 </html>
