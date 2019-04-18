@@ -60,6 +60,6 @@ if ($conn->multi_query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
+echo "<meta http-equiv='refresh' content='1;url=loggedInWebpage.html'>";
 $conn->close();
 ?>

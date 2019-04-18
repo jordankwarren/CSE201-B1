@@ -22,10 +22,10 @@ else{
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            echo "<a href='logUserHome.html'> homepage</a>";
+            echo "<meta http-equiv='refresh' content='0.5;url=loggedInWebpage.html'>";
 			}
 		else {
-			 echo "<a href='login.html'> login page</a>";
+			 echo "<meta http-equiv='refresh' content='0.5;url=login.html'>";
 		}
 
 	}
