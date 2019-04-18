@@ -1,5 +1,26 @@
 <html>
 <body>
+	<!-- Javascript goes in the document HEAD -->
+<script type="text/javascript">
+function altRows(id){
+if(document.getElementsByTagName){  
+var table = document.getElementById(id);  
+var rows = table.getElementsByTagName("tr"); 
+ 
+for(i = 0; i < rows.length; i++){          
+if(i % 2 == 0){
+rows[i].className = "evenrowcolor";
+}else{
+rows[i].className = "oddrowcolor";
+}      
+}
+}
+}
+
+window.onload=function(){
+altRows('myTable');
+}
+</script>
 	<style>
 * {
   box-sizing: border-box;
@@ -15,33 +36,38 @@
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
-
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
+table.myTable {
+font-family: verdana,arial,sans-serif;
+font-size:11px;
+color:#333333;
+border-width: 1px;
+border-color: #a9c6c9;
+border-collapse: collapse;
 }
-
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
+table.myTable th {
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #a9c6c9;
 }
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
+table.mytable td {
+border-width: 1px;
+padding: 8px;
+border-style: solid;
+border-color: #a9c6c9;
 }
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
+.oddrowcolor{
+background-color:#d4e3e5;
+}
+.evenrowcolor{
+background-color:#c3dde0;
 }
 </style>
 </head>
 <body>
 <h2>PLAYERS INFORMATION</h2>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-<table id="myTable" border=0 cellpadding=0 cellspacing=0 width=792 style='border-collapse:
- collapse;table-layout:fixed;width:594pt'>
+<table id="myTable" class="myTable">
  <col width=88 span=9 style='width:66pt'>
  
  <tr height=21 style='height:15.75pt'>
