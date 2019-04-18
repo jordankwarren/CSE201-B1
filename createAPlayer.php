@@ -1,10 +1,10 @@
 <?php
-if($_POST["form"]) {
-  mail("jordankw@miamioh.edu", "Player Data", $_POST["form"], "From:
+if($_POST["dataform"]) {
+  mail("jordankw@miamioh.edu", "Player Data", $_POST["dataform"], "From:
     playerdata@nbaproject.com");
-  mail("huangw11@miamioh.edu", "Player Data", $_POST["form"], "From:
+  mail("huangw11@miamioh.edu", "Player Data", $_POST["dataform"], "From:
     playerdata@nbaproject.com");
-  mail("rooptb@miamioh.edu", "Player Data", $_POST["form"], "From:
+  mail("rooptb@miamioh.edu", "Player Data", $_POST["dataform"], "From:
     playerdata@nbaproject.com");
 }
 ?>
