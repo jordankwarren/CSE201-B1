@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 if(isset($_POST['name']) && isset($_POST['team']) && isset($_POST['position'])
 && isset($_POST['height']) && isset($_POST['avg points']) &&
 isset($_POST['avg assists']) && isset($_POST['avg assists']) &&
@@ -43,6 +43,12 @@ isset($_POST['avg blocks'])) {
     echo 'error';
   }
 }
+?> -->
+<<?php
+$msg = "Testing if sends email";;
+
+mail("tbennettr@gmail.com","Testing",$msg);
+
 ?>
 
 <!DOCTYPE html>
@@ -68,12 +74,22 @@ isset($_POST['avg blocks'])) {
       <label for="avg assists"><b>Avg Assists</b></label>
       <input type="text" name="avg assists" placeholder="avg assists"/>
       <label for="avg rebounds"><b>Avg Rebounds</b></label>
+      <br>
       <input type="text" name="avg rebounds" placeholder="avg rebounds"/>
       <label for="avg steals"><b>Avg Steals</b></label>
       <input type="text" name="avg steals" placeholder="avg steals"/>
       <label for="avg blocks"><b>Avg Blocks</b></label>
       <input type="text" name="avg blocks" placeholder="avg blocks"/>
       <input type="submit">
+      <input type="button" value="Cancel" onclick="javascrtpt:window.location.href='loggedInWebpage.html'">
+
     </form>
   </div>
 </html>
+
+<style>
+.login-page{
+  border-radius: 4px;
+}
+
+</style>
