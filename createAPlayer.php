@@ -1,9 +1,5 @@
-<!-- <?php
-if(isset($_POST['name']) && isset($_POST['team']) && isset($_POST['position'])
-&& isset($_POST['height']) && isset($_POST['avg points']) &&
-isset($_POST['avg assists']) && isset($_POST['avg assists']) &&
-isset($_POST['avg rebounds']) && isset($_POST['avg steals']) &&
-isset($_POST['avg blocks'])) {
+<?php
+if(isset($_POST['submit'])) {
   $name = $_POST['name'];
   $team = $_POST['team'];
   $position = $_POST['position'];
@@ -13,43 +9,27 @@ isset($_POST['avg blocks'])) {
   $avg_rebs = $_POST['avg rebounds'];
   $avg_stls = $_POST['avg steals'];
   $avg_blks = $_POST['avg blocks'];
-  $to = 'jordankw@miamioh.edu, huangw11@miamioh.edu, rooptb@miamioh.edu';
+  $to = 'rooptb@miamioh.edu';
   $subject = 'New Player Data';
-  $body = '<html>
-            <body>
-              <h2>Player Data</h2>
-              <hr>
-              <p>Name:<br>'.$name.'</p>
-              <p>Position:<br>'.$position.'</p>
-              <p>Height:<br>'.$height.'</p>
-              <p>Avg Points:<br>'.$avg_pts.'</p>
-              <p>Avg Assists:<br>'.$avg_asts.'</p>
-              <p>Avg Rebounds:<br>'.$avg_rebs.'</p>
-              <p>Avg Steals:<br>'.$avg_stls.'</p>
-              <p>Avg Blocks:<br>'.$avg_blks.'</p>
-            </body>
-          </html>';
-
+  $body =    "Name: "  .$name .
+              "\nPosition: " . $position .
+              "\nHeight: " . $height .
+              "\nAvg Points: " . $avg_pts .
+              "\nAvg Assists: " . $avg_asts .
+              "\nAvg Rebounds: " . $avg_rebs .
+              "\nAvg Steals: " . $avg_stls.
+              "\nAvg Blocks: " . $avg_blks;
   $headers = "From: playerdata@nbaproject.com\r\n";
-  $headers .= "Reply-To: playerdata@nbaproject.com\r\n";
-  $headers .= "MIME-Version: 1.0\r\n";
-  $headers .= "Content-type: text/html; charset=utf-8";
-
-  $send = mail($to, $subject, $body, $headers);
-  if($send) {
-    echo '<br>';
-    echo 'Thanks for adding!';
-  } else {
-    echo 'error';
-  }
+  mail($to, $subject, $body, $headers);
 }
-?> -->
-<<?php
+?>
+
+<!-- <<?php
 $msg = "Testing if sends email";;
 
 mail("tbennettr@gmail.com","Testing",$msg);
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html>
@@ -74,7 +54,7 @@ mail("tbennettr@gmail.com","Testing",$msg);
       <label for="avg assists"><b>Avg Assists</b></label>
       <input type="text" name="avg assists" placeholder="avg assists"/>
       <label for="avg rebounds"><b>Avg Rebounds</b></label>
-      <br>
+      <br></br>
       <input type="text" name="avg rebounds" placeholder="avg rebounds"/>
       <label for="avg steals"><b>Avg Steals</b></label>
       <input type="text" name="avg steals" placeholder="avg steals"/>
