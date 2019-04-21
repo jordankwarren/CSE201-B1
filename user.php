@@ -26,13 +26,10 @@
 
   <div class="clear">
 		<input type="button" value="Cancel" onclick="javascrtpt:window.location.href='nbaWebsite.html'">
-
-  <div class="completeSignUp">
-    <form action="db.php">
       <input type="submit" name="submit" value="submit" onclick="javascrtpt:window.location.href='loggedInWebpage.html'">
-      </form>
+   
     </div>
-</div>
+
 </div>
 </div>
 </form>
