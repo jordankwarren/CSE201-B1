@@ -9,7 +9,7 @@ if(isset($_POST['submit'])) {
   $avg_rebs = $_POST['avg rebounds'];
   $avg_stls = $_POST['avg steals'];
   $avg_blks = $_POST['avg blocks'];
-  $to = 'rooptb@miamioh.edu';
+
   $subject = 'New Player Data';
   $body =    "Name: "  .$name .
               "\nPosition: " . $position .
@@ -20,16 +20,9 @@ if(isset($_POST['submit'])) {
               "\nAvg Steals: " . $avg_stls.
               "\nAvg Blocks: " . $avg_blks;
   $headers = "From: playerdata@nbaproject.com\r\n";
-  mail($to, $subject, $body, $headers);
+  mail("tbennettr@gmail.com", $subject, $body, $headers);
 }
 ?>
-
-<!-- <<?php
-$msg = "Testing if sends email";;
-
-mail("tbennettr@gmail.com","Testing",$msg);
-
-?> -->
 
 <!DOCTYPE html>
 <html>
