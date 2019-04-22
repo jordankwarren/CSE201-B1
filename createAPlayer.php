@@ -4,11 +4,11 @@ if(isset($_POST['submit'])) {
   $team = $_POST['team'];
   $position = $_POST['position'];
   $height = $_POST['height'];
-  $avg_pts = $_POST['avg points'];
-  $avg_asts = $_POST['avg assists'];
-  $avg_rebs = $_POST['avg rebounds'];
-  $avg_stls = $_POST['avg steals'];
-  $avg_blks = $_POST['avg blocks'];
+  $avg_pts = $_POST['avgPoints'];
+  $avg_asts = $_POST['avgAssists'];
+  $avg_rebs = $_POST['avgRebounds'];
+  $avg_stls = $_POST['avgSteals'];
+  $avg_blks = $_POST['avgBlocks'];
 
   $subject = 'New Player Data';
   $body =    "Name: "  .$name .
@@ -20,7 +20,7 @@ if(isset($_POST['submit'])) {
               "\nAvg Steals: " . $avg_stls.
               "\nAvg Blocks: " . $avg_blks;
   $headers = "From: playerdata@nbaproject.com\r\n";
-  mail("tbennettr@gmail.com", $subject, $body, $headers);
+  mail("tbennettr@gmail.com", $subject, $body);
 }
 ?>
 
@@ -43,16 +43,16 @@ if(isset($_POST['submit'])) {
       <label for="height"><b>Height</b></label>
       <input type="text" name="height" placeholder="height"/>
       <label for="avg points"><b>Avg Points</b></label>
-      <input type="text" name="avg points" placeholder="avg points"/>
+      <input type="text" name="avgPoints" placeholder="avg points"/>
       <label for="avg assists"><b>Avg Assists</b></label>
-      <input type="text" name="avg assists" placeholder="avg assists"/>
+      <input type="text" name="avgAssists" placeholder="avg assists"/>
       <label for="avg rebounds"><b>Avg Rebounds</b></label>
       <br></br>
-      <input type="text" name="avg rebounds" placeholder="avg rebounds"/>
+      <input type="text" name="avgRebounds" placeholder="avg rebounds"/>
       <label for="avg steals"><b>Avg Steals</b></label>
-      <input type="text" name="avg steals" placeholder="avg steals"/>
+      <input type="text" name="avgSteals" placeholder="avg steals"/>
       <label for="avg blocks"><b>Avg Blocks</b></label>
-      <input type="text" name="avg blocks" placeholder="avg blocks"/>
+      <input type="text" name="avgBlocks" placeholder="avg blocks"/>
       <input type="submit">
       <input type="button" value="Cancel" onclick="javascrtpt:window.location.href='loggedInWebpage.html'">
 
