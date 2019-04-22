@@ -1,13 +1,13 @@
 <?php
-  $name = $_POST['name'];
-  $team = $_POST['team'];
-  $position = $_POST['position'];
-  $height = $_POST['height'];
-  $avg_pts = $_POST['avgPoints'];
-  $avg_asts = $_POST['avgAssists'];
-  $avg_rebs = $_POST['avgRebounds'];
-  $avg_stls = $_POST['avgSteals'];
-  $avg_blks = $_POST['avgBlocks'];
+  $name = isset($_POST['name']);
+  $team = isset($_POST['team']);
+  $position = isset($_POST['position']);
+  $height = isset($_POST['height']);
+  $avg_pts = isset($_POST['avgPoints']);
+  $avg_asts = isset($_POST['avgAssists']);
+  $avg_rebs = isset($_POST['avgRebounds']);
+  $avg_stls = isset($_POST['avgSteals']);
+  $avg_blks = isset($_POST['avgBlocks']);
 
   $to = 'tbennettr@gmail.com';
   $subject = 'New Player Data';
@@ -20,7 +20,7 @@
               "\nAvg Steals: " . $avg_stls .
               "\nAvg Blocks: " . $avg_blks;
   $headers = "From: playerdata@nbaproject.com";
-  mail($to, $subject, $body);
+  mail($to, $subject, $body,$headers);
 
 ?>
 
