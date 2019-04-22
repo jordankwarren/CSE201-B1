@@ -31,6 +31,7 @@
   <title>Create a Player</title>
 </head>
 <body>
+  <head> Create a Player Form </head>
   <div class="login-page">
     <form method="post" name="dataform" action="createAPlayer.php">
       <label for="name"><b>Name</b></label>
@@ -61,6 +62,14 @@
 
 <style>
 .login-page{
+  border-radius: 4px;
+}
+head{
+  align: center;
+}
+.login-page{
+  width: 30%;
+  margin: 0 auto;
   border-radius: 4px;
 }
 
