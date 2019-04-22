@@ -9,6 +9,7 @@
   $avg_stls = $_POST['avgSteals'];
   $avg_blks = $_POST['avgBlocks'];
 
+  $to = 'tbennettr@gmail.com';
   $subject = 'New Player Data';
   $body =    "Name: " .   $name .
               "\nPosition: " . $position .
@@ -19,7 +20,7 @@
               "\nAvg Steals: " . $avg_stls .
               "\nAvg Blocks: " . $avg_blks;
   $headers = "From: playerdata@nbaproject.com";
-  mail("tbennettr@gmail.com", $subject, $body);
+  mail($to, $subject, $body);
 
 ?>
 
@@ -35,24 +36,24 @@
   <div class="login-page">
     <form method="post" name="dataform" action="createAPlayer.php">
       <label for="name"><b>Name</b></label>
-      <input type="text" name="name" placeholder="name"/>
+      <input type="text" name="name" />
       <label for="team"><b>Team</b></label>
-      <input type="text" name="team" placeholder="team"/>
+      <input type="text" name="team" />
       <label for="position"><b>Position</b></label>
-      <input type="text" name="position" placeholder="position"/>
+      <input type="text" name="position" />
       <label for="height"><b>Height</b></label>
-      <input type="text" name="height" placeholder="height"/>
+      <input type="text" name="height" />
       <label for="avg points"><b>Avg Points</b></label>
-      <input type="text" name="avgPoints" placeholder="avg points"/>
+      <input type="text" name="avgPoints"/>
       <label for="avg assists"><b>Avg Assists</b></label>
-      <input type="text" name="avgAssists" placeholder="avg assists"/>
+      <input type="text" name="avgAssists" />
       <label for="avg rebounds"><b>Avg Rebounds</b></label>
       <br></br>
-      <input type="text" name="avgRebounds" placeholder="avg rebounds"/>
+      <input type="text" name="avgRebounds"/>
       <label for="avg steals"><b>Avg Steals</b></label>
-      <input type="text" name="avgSteals" placeholder="avg steals"/>
+      <input type="text" name="avgSteals" />
       <label for="avg blocks"><b>Avg Blocks</b></label>
-      <input type="text" name="avgBlocks" placeholder="avg blocks"/>
+      <input type="text" name="avgBlocks" />
       <input type="submit">
       <input type="button" value="Cancel" onclick="javascrtpt:window.location.href='loggedInWebpage.html'">
 
