@@ -23,11 +23,11 @@
 
 ?>
 
-<!DOCTYPE html>
+
 <html>
 
 <head>
-  <meta charset="utf-8">
+
   <title>Create a Player</title>
 </head>
 <body>
