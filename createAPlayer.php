@@ -1,5 +1,4 @@
 <?php
-if(isset($_POST['submit'])) {
   $name = $_POST['name'];
   $team = $_POST['team'];
   $position = $_POST['position'];
@@ -12,16 +11,16 @@ if(isset($_POST['submit'])) {
 
   $subject = 'New Player Data';
   $body =    "Name: "  .$name .
-              "\nPosition: " . $position .
-              "\nHeight: " . $height .
-              "\nAvg Points: " . $avg_pts .
-              "\nAvg Assists: " . $avg_asts .
-              "\nAvg Rebounds: " . $avg_rebs .
-              "\nAvg Steals: " . $avg_stls.
-              "\nAvg Blocks: " . $avg_blks;
-  $headers = "From: playerdata@nbaproject.com\r\n";
-  mail("tbennettr@gmail.com", $subject, $body);
-}
+              "\nPosition: $position" .
+              "\nHeight: $height" .
+              "\nAvg Points: $avg_pts" .
+              "\nAvg Assists: $avg_asts" .
+              "\nAvg Rebounds: $avg_rebs" .
+              "\nAvg Steals: $avg_stls" .
+              "\nAvg Blocks: $avg_blks";
+  $headers = "From: playerdata@nbaproject.com";
+  mail("tbennettr@gmail.com", $subject, $body,$headers);
+
 ?>
 
 <!DOCTYPE html>
