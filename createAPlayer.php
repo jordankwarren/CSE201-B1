@@ -10,7 +10,7 @@
   $avg_blks = $_POST['avgBlocks'];
 
   $subject = 'New Player Data';
-  $body =    "Name: "  .$name .
+  $body =    "Name: .$name" .   
               "\nPosition: $position" .
               "\nHeight: $height" .
               "\nAvg Points: $avg_pts" .
