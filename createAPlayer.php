@@ -36,24 +36,24 @@
   <div class="login-page">
     <form method="post" name="dataform" action="createAPlayer.php">
       <label for="name"><b>Name</b></label>
-      <input type="text" name="name" />
+      <p><input type="text" name="name" /></p>
       <label for="team"><b>Team</b></label>
-      <input type="text" name="team" />
+    <p>  <input type="text" name="team" /> </p>
       <label for="position"><b>Position</b></label>
-      <input type="text" name="position" />
+    <p>  <input type="text" name="position" /></p>
       <label for="height"><b>Height</b></label>
-      <input type="text" name="height" />
+    <p>  <input type="text" name="height" /></p>
       <label for="avg points"><b>Avg Points</b></label>
-      <input type="text" name="avgPoints"/>
+      <p><input type="text" name="avgPoints"/></p>
       <label for="avg assists"><b>Avg Assists</b></label>
-      <input type="text" name="avgAssists" />
+      <p><input type="text" name="avgAssists" /></p>
       <label for="avg rebounds"><b>Avg Rebounds</b></label>
       <br></br>
-      <input type="text" name="avgRebounds"/>
+      <p><input type="text" name="avgRebounds"/></p>
       <label for="avg steals"><b>Avg Steals</b></label>
-      <input type="text" name="avgSteals" />
+    <p>  <input type="text" name="avgSteals" /></p>
       <label for="avg blocks"><b>Avg Blocks</b></label>
-      <input type="text" name="avgBlocks" />
+    <p>  <input type="text" name="avgBlocks" /></p>
       <input type="submit">
       <input type="button" value="Cancel" onclick="javascrtpt:window.location.href='loggedInWebpage.html'">
 
@@ -66,7 +66,7 @@
   border-radius: 4px;
 }
 head{
-  align: center;
+  text-align: center;
 }
 .login-page{
   width: 30%;
