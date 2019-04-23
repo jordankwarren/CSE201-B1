@@ -9,7 +9,7 @@
   $avg_stls = isset($_POST['avgSteals']);
   $avg_blks = isset($_POST['avgBlocks']);
 
-  $to = 'tbennettr@gmail.com';
+  $to = 'rooptb@miamioh.edu';
   $subject = 'New Player Data';
   $body =    "Name: " .   $name .
               "\nPosition: " . $position .

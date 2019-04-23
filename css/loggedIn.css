@@ -6,12 +6,33 @@
   border-radius: 20px;
   display: inline-block;
   border: solid 2px;
+  font-family: Verdana;
   position: absolute;
   top: 55px;
   left: 100px;
-  font-family: Verdana;
+
 }
 .playerB:hover{
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 0px 10px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 0px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+
+}
+.addFav{
+  color: black !important;
+  text-transform: uppercase;
+  background: #e01f1f;
+  padding: 15px;
+  border-radius: 20px;
+  display: inline-block;
+  border: solid 2px;
+  font-family: Verdana;
+  position: absolute;
+  top: 55px;
+  left: 250px;
+}
+.addFav:hover{
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 -webkit-box-shadow: 0px 0px 10px -10px rgba(0,0,0,0.57);
 -moz-box-shadow: 0px 5px 0px -10px rgba(0,0,0,0.57);
