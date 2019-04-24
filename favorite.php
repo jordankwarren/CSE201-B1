@@ -13,7 +13,7 @@
       die("fail to connect: " . $conn->connect_error);
   }
 
-  $sql = "INSERT INTO newTable(username,name)
+  $sql = "INSERT INTO favoritePlayer(usrname,playersName)
   VALUES ('user','$_POST[name]';";
 
   if ($conn->multi_query($sql) === TRUE) {
