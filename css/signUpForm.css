@@ -36,15 +36,15 @@
     font-size: 17px;
     font-family: 宋体;
  
-    width: 65px;
+    width: 150px;
     height: 28px;
     line-height: 28px;
     text-align: center;
  
     color: white;
     background-color: #000000;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 }
 
 body {
@@ -71,6 +71,10 @@ body {
  
     border-radius: 10px;
     text-align: center;
+}
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
