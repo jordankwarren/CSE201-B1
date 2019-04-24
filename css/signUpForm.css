@@ -52,6 +52,7 @@ body {
     style=" background-repeat:no-repeat ;
     background-size:20%;
     background-attachment: fixed;"
+
 }
 #title{
 	color: white;
@@ -60,15 +61,12 @@ body {
 	width: 500px;
     height: 360px;
     padding: 13px;
- 
     position: absolute;
     left: 50%;
     top: 50%;
     margin-left: -200px;
     margin-top: -200px;
- 
     background-color: #101328;
- 
     border-radius: 10px;
     text-align: center;
 }
