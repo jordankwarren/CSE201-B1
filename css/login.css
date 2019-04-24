@@ -1,4 +1,3 @@
-
 #submit{
   position: absolute;
   left: 70px;
@@ -18,18 +17,18 @@
 
 
 .label_input {
-    font-size: 17px;
-    font-family: 宋体;
+  font-size: 17px;
+  font-family: 宋体;
 
-    width: 150px;
-    height: 28px;
-    line-height: 28px;
-    text-align: center;
+  width: 150px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
 
-    color: white;
-    background-color: #101328;
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
+  color: white;
+  background-color: #101328;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 body {
@@ -40,10 +39,10 @@ body {
 
 }
 #title{
-	color: black;
+  color: white;
 }
 .container{
-	width: 35%;
+  width: 35%;
     height: 50%;
     padding: 13px;
     position: absolute;
@@ -53,10 +52,5 @@ body {
     margin-top: -200px;
     background-color: #116ead;
     border-radius: 10px;
-    border: solid 2px;
     text-align: center;
-}
-form p > * {
-    display: inline-block;
-    vertical-align: middle;
 }
