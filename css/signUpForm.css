@@ -22,3 +22,55 @@
   padding: 20px;
   top: 154px;
 }
+
+.text_field {
+    width: 278px;
+    height: 28px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+
+ 
+.label_input {
+    font-size: 17px;
+    font-family: 宋体;
+ 
+    width: 65px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+ 
+    color: white;
+    background-color: #000000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+body {
+    background-image: url(../img/signupbackgroup.jpg);;
+    style=" background-repeat:no-repeat ;
+    background-size:20%;
+    background-attachment: fixed;"
+}
+#title{
+	color: white;
+}
+.container{
+	width: 500px;
+    height: 360px;
+    padding: 13px;
+ 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+ 
+    background-color: #101328;
+ 
+    border-radius: 10px;
+    text-align: center;
+}
+
+
