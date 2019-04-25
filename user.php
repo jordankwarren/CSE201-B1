@@ -26,8 +26,8 @@
 
   <div class="clear">
 		<input type="button" value="Cancel" onclick="javascrtpt:window.location.href='nbaWebsite.html'">
-      <input type="submit" name="submit" value="submit" onclick="javascrtpt:window.location.href='loggedInWebpage.html'">
-   
+      <input type="submit" name="submit" value="submit">
+
     </div>
 
 </div>
