@@ -1,20 +1,15 @@
 <?php
-if(isset($_POST["submit"])){
+if(isset($_REQUEST['name'])){
 
-  if($_POST["name"]==""||$_POST["team"]==""||$_POST["position"]==""||$_POST["height"]==""||$_POST["avgPoints"]==""||$_POST["avgAssists"]==""||$_POST["avgRebounds"]==""||$_POST["avgSteals"]==""||$_POST["avgBlocks"]){
-    echo "Fill all fields";
-  }
-else{
-
-  $name = isset($_POST['name']);
-  $team = isset($_POST['team']);
-  $position = isset($_POST['position']);
-  $height = isset($_POST['height']);
-  $avg_pts = isset($_POST['avgPoints']);
-  $avg_asts = isset($_POST['avgAssists']);
-  $avg_rebs = isset($_POST['avgRebounds']);
-  $avg_stls = isset($_POST['avgSteals']);
-  $avg_blks = isset($_POST['avgBlocks']);
+  $name = $_REQUEST['name'];
+  $team = $_REQUEST['team'];
+  $position = $_REQUEST['position'];
+  $height = $_REQUEST['height'];
+  $avg_pts = $_REQUEST['avgPoints'];
+  $avg_asts = $_REQUEST['avgAssists'];
+  $avg_rebs = $_REQUEST['avgRebounds'];
+  $avg_stls = $_REQUEST['avgSteals'];
+  $avg_blks = $_REQUEST ['avgBlocks'];
 
   $to = 'rooptb@miamioh.edu';
   $subject = 'New Player Data';
@@ -27,8 +22,9 @@ else{
               "\nAvg Steals: " . $avg_stls .
               "\nAvg Blocks: " . $avg_blks;
   $headers = "From: playerdata@nbaproject.com";
+
  mail($to, $subject, $body,$headers);
-}
+
 }
 ?>
 
@@ -42,7 +38,7 @@ else{
 <body>
   <p class="title"> Create a Player Form </p>
   <div class="login-page">
-    <form method="post" name="dataform" action="createAPlayer.php">
+    <form method="post" id = "dataform" name="dataform" action="createAPlayer.php">
       <label for="name"><b>Name</b></label>
       <p><input type="text" name="name" /> </p>
       <label for="team"><b>Team</b></label>
