@@ -1,4 +1,11 @@
 <?php
+if(isset($_POST["submit"])){
+
+  if($_POST["name"]==""||$_POST["team"]==""||$_POST["position"]==""||$_POST["height"]==""||$_POST["avgPoints"]==""||$_POST["avgAssists"]==""||$_POST["avgRebounds"]==""||$_POST["avgSteals"]==""||$_POST["avgBlocks"]){
+    echo "Fill all fields";
+  }
+else{
+
   $name = isset($_POST['name']);
   $team = isset($_POST['team']);
   $position = isset($_POST['position']);
@@ -20,8 +27,12 @@
               "\nAvg Steals: " . $avg_stls .
               "\nAvg Blocks: " . $avg_blks;
   $headers = "From: playerdata@nbaproject.com";
-  mail($to, $subject, $body,$headers);
-
+  $success = mail($to, $subject, $body,$headers);
+  if($success){
+    echo "<meta http-equiv='refresh' content='1;url=loggedInWebpage.php'>";
+  }
+}
+}
 ?>
 
 
