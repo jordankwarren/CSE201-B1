@@ -163,7 +163,7 @@ transition: all 0.4s ease 0s;
 
 .news{
   position: absolute;
-  right: 200px;
+  right: 80px;
   top: 130px;
   font-size: 35px;
   font-family: Verdana;
@@ -171,24 +171,18 @@ transition: all 0.4s ease 0s;
 
 }
 .newsBox{
-  border: solid 1px;
-  border-color: black;
+
   position: absolute;
-  width: 35%;
+  width: 25%;
   height: 317%;
-  right: 50px;
-  top: 175px;
-  background-color: white;
-  font-size: 30px;
-  border-radius: 4px;
-  text-align: center;
-  font-family: Verdana;
+  right: 20px;
+  top: 195px;
 }
-.newsBoxPic{
-  position: absolute;
-  height:50%;
-  right: 30px;
-  bottom: 20px;
+.newsText{
+  font-size: 22px;
+  position: relative;
+  text-align: center;
+
 }
 .newsTag{
   color: #ed6749;
