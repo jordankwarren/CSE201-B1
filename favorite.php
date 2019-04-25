@@ -17,21 +17,18 @@
   VALUES ('user','$_POST[name]');";
 
   if ($conn->multi_query($sql) === TRUE) {
-
-  } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
   }
-  echo "<meta http-equiv='refresh' content='1;url=loggedInWebpage.html'>";
   $conn->close();
 
 ?>
+
 
 
 <html>
 
 <head>
 
-  <title>Create a Player</title>
+  <title>Add a Player</title>
 </head>
 <body>
   <p class="title"> Add Your Favorite Player </p>
