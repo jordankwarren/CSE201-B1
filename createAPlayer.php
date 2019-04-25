@@ -40,9 +40,9 @@ if(isset($_REQUEST['name'])){
   <div class="login-page">
     <form method="post" id = "dataform" name="dataform" action="createAPlayer.php">
       <label for="name"><b>Name</b></label>
-      <p><input type="text" name="name" /> </p>
+      <p><input type="text" name="name" required = "required" /> </p>
       <label for="team"><b>Team</b></label>
-    <p>  <input type="text" name="team" /> </p>
+    <p>  <input type="text" name="team" required = "required"/> </p>
       <label for="position"><b>Position</b></label>
     <p>  <input type="text" name="position" /> </p>
       <label for="height"><b>Height</b></label>
