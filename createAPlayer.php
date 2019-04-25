@@ -27,10 +27,7 @@ else{
               "\nAvg Steals: " . $avg_stls .
               "\nAvg Blocks: " . $avg_blks;
   $headers = "From: playerdata@nbaproject.com";
-  $success = mail($to, $subject, $body,$headers);
-  if($success){
-    echo "<meta http-equiv='refresh' content='1;url=loggedInWebpage.php'>";
-  }
+ mail($to, $subject, $body,$headers);
 }
 }
 ?>
@@ -64,8 +61,9 @@ else{
     <p>  <input type="text" name="avgSteals" /> </p>
       <label for="avg blocks"><b>Avg Blocks</b></label>
     <p>  <input type="text" name="avgBlocks" /> </p>
-      <input type="submit">
-      <input type="button" value="Cancel" onclick="javascrtpt:window.location.href='loggedInWebpage.html'">
+
+      <input type="submit" value="submit" onclick="javascrtpt:window.location.href='loggedInWebpage.php'">
+      <input type="button" value="Cancel" onclick="javascrtpt:window.location.href='loggedInWebpage.php'">
 
     </form>
   </div>
