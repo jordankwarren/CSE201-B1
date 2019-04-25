@@ -17,13 +17,13 @@
 
 
 .label_input {
-  font-size: 17px;
+  font-size: 15px;
   font-family: 宋体;
 
-  width: 150px;
-  height: 28px;
+  
   line-height: 28px;
   text-align: center;
+  padding: 8px;
 
   color: white;
   background-color: #101328;
