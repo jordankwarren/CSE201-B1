@@ -17,7 +17,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 html { overflow-y: scroll; }
 body { 
-  background: #eee url('bg.png'); /* http://subtlepatterns.com/weave/ */
+  background: #eee url(../img/bg.png); /* http://subtlepatterns.com/weave/ */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 62.5%;
   line-height: 1;
@@ -108,10 +108,10 @@ h1 {
 }
 
 #myTable thead tr th.headerSortUp span {
-  background-image: url('up-arrow.png');
+  background-image: url(../img/up-arrow.png);
 }
 #myTable thead tr th.headerSortDown span {
-  background-image: url('down-arrow.png');
+  background-image: url(../img/down-arrow.png);
 }
 
 
