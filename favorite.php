@@ -1,5 +1,6 @@
 <?php
   $name = isset($_POST['name']);
+  $user = isset($_POST['username']);
 
   $servername = "localhost";
   $username = "cse383";
@@ -14,7 +15,7 @@
   }
 
   $sql = "INSERT INTO favoritePlayer(usrname,playersName)
-  VALUES ('user','$_POST[name]')";
+  VALUES ('user','$_POST[name]');";
 
   if ($conn->multi_query($sql) === TRUE) {
   }
@@ -34,7 +35,9 @@
   <p class="title"> Add Your Favorite Player </p>
   <div class="fav-page">
     <form method="post" name="dataform" action="favorite.php">
-      <label for="name"><b>Name</b></label>
+      <label for="user"><b> User Name</b></label>
+      <p><input type="text" name="username" /> </p>
+      <label for="name"><b> Player Name</b></label>
       <p><input type="text" name="name" /> </p>
 
       <input type="submit">
