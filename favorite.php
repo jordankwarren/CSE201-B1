@@ -15,7 +15,7 @@
   }
 
   $sql = "INSERT INTO favoritePlayer(usrname,playersName)
-  VALUES ('user','$_POST[name]');";
+  VALUES ('user','$_POST[name]')";
 
   if ($conn->multi_query($sql) === TRUE) {
   }
