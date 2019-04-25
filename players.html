@@ -2,21 +2,20 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html">
   <title>Simple Table Sorting with jQuery - Treehouse Demo</title>
-  <meta name="author" content="Jake Rocheleau">
-  <link rel="shortcut icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
-  <link rel="icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
   <link rel="stylesheet" type="text/css" media="all" href="css/players.css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
  <div id="wrapper">
+	<input type="button" name="Submit" value="Homepage" onclick ="location.href='nbaWebsite.html'"/>
   <h1>Player's Information</h1>
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-  <input type="button" name="Submit" value="Homepage" onclick ="location.href='nbaWebsite.html'"/>
+  
   <table id="myTable" cellspacing="0" cellpadding="0">
     <thead>
       <tr>
