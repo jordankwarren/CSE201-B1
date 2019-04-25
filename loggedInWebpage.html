@@ -68,39 +68,16 @@
 <img src = "img/greek.png" class = "greekPic">
 <img src = "img/leonard.png" class = "kawPic">
 <img src = "img/kyrie.png" class = "kyriePic">
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
-<?php
-  $servername = "localhost";
-  $username = "cse383";
-  $password = "HoABBHrBfXgVwMSz";
-  $dbname = "cse383";
-
-  // create connection
-  $conn = new mysqli($servername, $username, $password, $dbname);
-  // check connection
-  if ($conn->connect_error) {
-      die("fail to connect: " . $conn->connect_error);
-  }
-
-  $sql = "SELECT playersName FROM favoritePlayer,usrinfor WHERE usrname=usrname";
-  $result = $conn->query($sql);
-
-  if ($result->num_rows > 0) {
-    echo $rows[playersName];
-      echo "<meta http-equiv='refresh' content='0.5;url=loggedInWebpage.html'>";
-}
-
-
-  if ($conn->multi_query($sql) === TRUE) {
-
-  } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  echo "<meta http-equiv='refresh' content='1;url=loggedInWebpage.html'>";
-  $conn->close();
-
-
-
-  ?>
-

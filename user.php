@@ -1,39 +1,4 @@
 
-
-
-<!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="css/normalize.css" >
-<link rel="stylesheet" href="css/signUpForm.css" >
-<html>
-<form  method="POST" action='user.php'>
-<div class="container">
-	<div align="center">
-  <h1>Sign Up</h1>
-  <p>Please fill in this form to create an account.</p>
-  <hr>
-
-  <label for="email"><b>Email</b></label>
-  <input type="email" placeholder="Enter Email" name="email" required>
-
-  <label for="usrname"><b>User Name</b></label>
-  <input type="usrname" placeholder="Enter User Name" name="usrname" required>
-
-  <label for="psw"><b>Password</b></label>
-  <input type="psw" placeholder="Enter Password" name="psw" required>
-
-  <label for="psw-repeat"><b>Repeat Password</b></label>
-  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-  <div class="clear">
-		<input type="button" value="Cancel" onclick="javascrtpt:window.location.href='nbaWebsite.html'">
-      <input type="submit" name="submit" value="submit">
-
-    </div>
-
-</div>
-</div>
-</form>
-</html>
 <?php
 $servername = "localhost";
 $username = "cse383";
