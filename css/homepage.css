@@ -187,19 +187,29 @@ transition: all 0.4s ease 0s;
 }
 .benPic{
   position: absolute;
-  height:200%;
-  width: 30%;
-  left: 230px;
-  top: 800px;
+  height:80%;
+  width: 35%;
+  top: 40px;
+  left: 90px;
   radius: 10px;
 }
 .wadePic{
   position: absolute;
-  height:205%;
-  width: 30%;
-  left: 800px;
-  top: 800px;
+  height: 80%;
+  width: 35%;
+  top: 40px;
+  right: 150px;
   radius: 10px;
+}
+.clickPic{
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  position: absolute;
+  top: 720px;
+  height: 300%;
+  width: 100%;
+  border-color: #bac3d1;
+
 }
 .highVid{
   width: 100%;
