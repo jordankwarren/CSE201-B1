@@ -14,13 +14,15 @@
 </h1>
 
 <div class="create">
-    <a class="createB" style="color = black; text-decoration: none" href="createAPlayer.php"  target="_blank" rel="nofollow noopener">Create a Player</a></div>
+    <a class="createB" style="color = black; text-decoration: none" href="createAPlayer.php" rel="nofollow noopener">Create a Player</a></div>
 </div>
+
+
   <p> <a class ="playerB" style="text-decoration: none" href = "players.html ">Players </a></p>
   <p> <a class = "addFav" style="text-decoration: none" href = "favorite.php">Add Favorite Player</a></p>
 
 <div class="login">
-  <a class="loginA" style="color = black; text-decoration: none" href="nbaWebsite.html"  target="_blank" rel="nofollow noopener">Logout </a></div>
+  <a class="loginA" style="color = black; text-decoration: none" href="nbaWebsite.html"  rel="nofollow noopener">Logout </a></div>
 
   </div>
 
@@ -38,25 +40,26 @@
 
 </p>
 <p class = "highlightHead">
-  Highlights
+  Top 5 Plays of the Night!
 </p>
 <p class = "highlightBox">
-  Top 10 Plays!
-<video src="img/plays.mp4"
- controls width="450" height ="450" preload></video>
+
+<video src="img/top5.mp4"
+ controls preload></video>
 </p>
 <p class ="news">
   Latest News
-</p>
 
-<p class = "newsBox">
-  Kevin Durant says he has not made a decision on upcoming free agency yet!
-  <br> <br>
-  Check out more information on this
-  <a class = "newsTag" style="text-decoration: none"href="http://www.sportingnews.com/us/nba/news/kevin-durant-addresses-upcoming-free-agency-says-he-has-yet-to-make-decision/rsnhckr4lzvy1mpjj6h1suanv"> here </a>
-
-  <img src="img/durant.jpg" class ="newsBoxPic">
 </p>
+<div class = "newsBox">
+<ul class="newsText">
+  <li>Lillard hits game winner to send Portland past OKC in game 5! Check out more information on this <a class = "newsTag" style="text-decoration: none"href="https://www.nba.com/article/2019/04/24/nba-reacts-damian-lillard-game-winner-okc?collection=news" target="_blank"> here </a>
+</li><br>
+<li>Warriors lose to Clippers and are heading to game 6 can they pull out the series? Check out more information on this <a class = "newsTag" style="text-decoration: none"href="https://ftw.usatoday.com/2019/04/warriors-nba-playoffs-clippers-curry-durant" target="_blank"> here </a>
+</li><br>
+
+</ul>
+</div>
 <p class = "Playoffs" >
   Playoffs </p>
 <p class = "playoffBox">
@@ -66,8 +69,20 @@
 <img src = "img/greek.png" class = "greekPic">
 <img src = "img/leonard.png" class = "kawPic">
 <img src = "img/kyrie.png" class = "kyriePic">
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
+
 <?php
 session_start();
   $servername = "localhost";
