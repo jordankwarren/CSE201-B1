@@ -121,19 +121,19 @@ transition: all 0.4s ease 0s;
   font-size: 35px;
   font-family: Verdana;
   color: black;
+  border-bottom: solid 2px;
 
 }
 .favBox{
-  border: solid 1px;
+  border: solid 2px;
   border-color: black;
+  border-color: #bac3d1;
   position: absolute;
   width: 20%;
-  height: 317%;
+  height: 200%;
   left: 20px;
-  top: 175px;
-  background-color: white;
+  top: 190px;
   font-size: 30px;
-  border-radius: 4px;
   text-align: center;
   font-family: Verdana;
 }
@@ -144,6 +144,7 @@ transition: all 0.4s ease 0s;
   font-size: 35px;
   font-family: Verdana;
   color: black;
+  border-bottom: solid 2px;
 
 }
 .highlightBox{
@@ -151,12 +152,7 @@ transition: all 0.4s ease 0s;
   width: 60%;
   height: 217%;
   left: 350px;
-  top: 175px;
-  background-color: white;
-  font-size: 30px;
-  border-radius: 4px;
-  text-align: center;
-  font-family: Verdana;
+  top: 205px;
 }
 .highVid{
   width: 100%;
@@ -197,7 +193,7 @@ transition: all 0.4s ease 0s;
 .Playoffs{
   position: absolute;
   right: 700px;
-  top: 700px;
+  top: 600px;
   font-size: 35px;
   font-family: Verdana;
   color: black;
@@ -207,7 +203,7 @@ transition: all 0.4s ease 0s;
   width: 100%;
   height: 250%;
   right: 0px;
-  top: 770px;
+  top: 670px;
 }
 .playoffPic{
   width: 100%;
@@ -221,7 +217,7 @@ transition: all 0.4s ease 0s;
   height:170%;
   width: 20%;
   left: 150px;
-  top: 1200px;
+  top: 1100px;
   transition: transform .25s ease;
 
 }
@@ -234,7 +230,7 @@ transition: all 0.4s ease 0s;
   height:160%;
   width: 15%;
   right: 150px;
-  top: 1200px;
+  top: 1100px;
   transition: transform .25s ease;
 
 }
@@ -247,7 +243,7 @@ transition: all 0.4s ease 0s;
   height:170%;
   width: 18%;
   left: 600px;
-  top: 1200px;
+  top: 1100px;
   transition: transform .25s ease;
 }
 .greekPic:hover  {

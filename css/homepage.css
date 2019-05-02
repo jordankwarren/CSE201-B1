@@ -95,7 +95,7 @@ transition: all 0.4s ease 0s;
 }
 .highlightHead{
   position: absolute;
-  left: 440px;
+  left: 425px;
   top: 130px;
   font-size: 35px;
   font-family: Verdana;
@@ -106,14 +106,9 @@ transition: all 0.4s ease 0s;
 .highlightBox{
   position: absolute;
   width: 60%;
-  height: 317%;
+  height: 300%;
   left: 100px;
-  top: 190px;
-  background-color: white;
-  font-size: 30px;
-
-  text-align: center;
-  font-family: Verdana;
+  top: 210px;
 }
 
 
@@ -125,6 +120,7 @@ transition: all 0.4s ease 0s;
   font-family: Verdana;
   color: black;
   border-bottom: solid 2px;
+  
 
 }
 .newsBox{
