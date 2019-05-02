@@ -44,7 +44,7 @@ else{
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            echo "<meta http-equiv='refresh' content='0.5;url=loggedInWebpage.php'>";
+            echo "<meta http-equiv='refresh' content='0.5;url=loggedInWebpage.html'>";
 			}
 		else {
 			$_SESSION['val']=$name;
