@@ -70,16 +70,6 @@
 <img src = "img/leonard.png" class = "kawPic">
 <img src = "img/kyrie.png" class = "kyriePic">
 
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
 
@@ -107,7 +97,6 @@ session_start();
 
 
   if ($conn->multi_query($sql) === TRUE) {
-
   } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
   }
