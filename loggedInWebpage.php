@@ -16,8 +16,6 @@
 <div class="create">
     <a class="createB" style="color = black; text-decoration: none" href="createAPlayer.php"  target="_blank" rel="nofollow noopener">Create a Player</a></div>
 </div>
-
-
   <p> <a class ="playerB" style="text-decoration: none" href = "players.html ">Players </a></p>
   <p> <a class = "addFav" style="text-decoration: none" href = "favorite.php">Add Favorite Player</a></p>
 
@@ -71,6 +69,7 @@
 </body>
 </html>
 <?php
+session_start();
   $servername = "localhost";
   $username = "cse383";
   $password = "HoABBHrBfXgVwMSz";
@@ -83,7 +82,7 @@
       die("fail to connect: " . $conn->connect_error);
   }
 
-  $sql = "SELECT playersName FROM favoritePlayer,usrinfor WHERE usrname=usrname";
+  $sql = "SELECT playersName FROM favoritePlayer,usrinfor WHERE usrname=$_SESSION['val']";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
