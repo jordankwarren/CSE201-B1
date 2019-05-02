@@ -87,7 +87,7 @@ session_start();
 
   if ($result->num_rows > 0) {
     echo $rows[playersName];
-      echo "<meta http-equiv='refresh' content='0.5;url=loggedInWebpage.html'>";
+     echo "<h1> 123456</h1>";
 }
 
 
