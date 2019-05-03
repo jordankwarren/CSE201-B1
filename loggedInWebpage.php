@@ -17,7 +17,7 @@
 </div>
 
 
-  <p> <a class ="playerB" style="text-decoration: none" href = "players.html ">Players </a></p>
+  <p> <a class ="playerB" style="text-decoration: none" href = "playerLogInTable.html ">Players </a></p>
   <p> <a class = "addFav" style="text-decoration: none" href = "favorite.php">Add Favorite Player</a></p>
 
 <div class="login">
@@ -92,7 +92,7 @@
 
   if ($result->num_rows > 0) {
    echo $rows[playersName];
-     
+
 }
 
 
@@ -103,5 +103,3 @@
   echo "<meta http-equiv='refresh' content='1;url=loggedInWebpage.html'>";
   $conn->close();
   ?>
- 
-
