@@ -4,7 +4,6 @@
 
 <head>
 
-<link rel="stylesheet" type="text/css" href="css/normalize.css" >
 <link rel="stylesheet" href="css/loggedIn.css" >
 </head>
 <body>
@@ -36,7 +35,9 @@
 <p class = "favPlayer">
   Favorite players
 </p>
-<p class="favBox">
+<p class="favBox" id="favBox">
+	<p>
+		</p>
 
 </p>
 <p class = "highlightHead">
@@ -69,12 +70,12 @@
 <img src = "img/greek.png" class = "greekPic">
 <img src = "img/leonard.png" class = "kawPic">
 <img src = "img/kyrie.png" class = "kyriePic">
-
 </body>
 </html>
 
+
 <?php
-session_start();
+  session_start();
   $servername = "localhost";
   $username = "cse383";
   $password = "HoABBHrBfXgVwMSz";
@@ -86,13 +87,12 @@ session_start();
   if ($conn->connect_error) {
       die("fail to connect: " . $conn->connect_error);
   }
-
-  $sql = "SELECT playersName FROM favoritePlayer,usrinfor WHERE usrname=$_SESSION['val']";
+  $sql = "SELECT playersName FROM favoritePlayer,usrinfor WHERE usrname=usrname";
   $result = $conn->query($sql);
 
   if ($result->num_rows > 0) {
-    echo $rows[playersName];
-     echo "<h1> 123456</h1>";
+   echo $rows[playersName];
+     
 }
 
 
@@ -102,8 +102,6 @@ session_start();
   }
   echo "<meta http-equiv='refresh' content='1;url=loggedInWebpage.html'>";
   $conn->close();
-
-
-
   ?>
+ 
 

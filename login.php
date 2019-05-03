@@ -25,6 +25,7 @@ if(!isset($_POST['submit'])){
 	exit();
 }
 $name=$_POST['usrname'];
+$_SESSION['val']=$name;
 $psw=$_POST['psw'];
 if($name==""||$psw==""){
 	echo "<script>alert('Please enter the username or password!')</script>";
@@ -44,11 +45,9 @@ else{
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            echo "<meta http-equiv='refresh' content='0.5;url=loggedInWebpage.html'>";
+            echo "<meta http-equiv='refresh' content='0.5;url=loggedInWebpage.php'>";
 			}
 		else {
-			$_SESSION['val']=$name;
-			echo $_SESSION['val'];
 			 echo "<meta http-equiv='refresh' content='0.5;url=login.html'>";
 		}
 		
