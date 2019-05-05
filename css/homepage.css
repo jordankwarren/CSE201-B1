@@ -117,17 +117,17 @@ margin:auto;
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: #250d0e;
+  color: white;
 }
 .navbar .navbar-text {
   color: #d6eff6;
 }
 .navbar .navbar-text a {
-  color: #250d0e;
+  color: white;
 }
 .navbar .navbar-text a:hover,
 .navbar .navbar-text a:focus {
-  color: #250d0e; 
+  color: white; 
 }
 .navbar .navbar-nav .nav-link {
   color: #d6eff6;
@@ -136,7 +136,7 @@ margin:auto;
 }
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus {
-  color: #250d0e;
+  color: white;
 }
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item.active .nav-link:hover,
@@ -144,7 +144,7 @@ margin:auto;
 .navbar .navbar-nav .nav-item.show .nav-link,
 .navbar .navbar-nav .nav-item.show .nav-link:hover,
 .navbar .navbar-nav .nav-item.show .nav-link:focus {
-  color: #250d0e;
+  color: white;
   background-color: #ddc6c4;
 }
 .navbar .navbar-toggle {
