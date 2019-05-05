@@ -75,7 +75,7 @@ position:absolute;
 	float: left; 
 	display: inline; 
 	height: 600px;
-	width: 400px;
+	width: 500px;
   transition: transform .25s ease;
 
 }
@@ -100,7 +100,7 @@ position:absolute;
 	clear: both; 
 display: block; 
 height: 600px;
-	width: 400px;
+	width: 350px;
 margin:auto; 
   transition: transform .25s ease;
 }
