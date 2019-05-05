@@ -1,11 +1,11 @@
-#网站标题{
+#websitetitle{
 	height: 800px;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	position:relative;
 }
 
-#模糊{
+#backpic{
 	float: left;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -17,7 +17,7 @@
 	filter: blur(5px);
 	position:fixed;
 	}
-#网站名字{
+#websitename{
 position:absolute;
 	color: white;
 	left:800px;
@@ -42,7 +42,7 @@ position:absolute;
 	    letter-spacing: 0.04em;
 			font-size: -webkit-xxx-large;
 }
-#hl标题{
+#hltitle{
 position:absolute;
 	 text-align: center;
 	 color: white;
