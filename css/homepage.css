@@ -1,12 +1,13 @@
 #websitetitle{
 	height: 300px;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+  margin-top: -80px;
 	position:relative;
-	margin-left: -60px;
+	margin-left: -300px;
 }
 body{
-	background-color: #c2d8be;
+	background-color: #b7d2ff;
 }
 #backpic{
 	float: left;
@@ -35,15 +36,15 @@ position:absolute;
 	width: 1100px;
 }
 #highlight{
-	border-style: double;
-	border-color: #000000;
+
+	
 		height: 700px;
 		width:1300px;
 		margin: 0 auto;
 		margin-bottom: 100px;
 		position:relative;
 		color: black;
-		    
+
 		    letter-spacing: 0.04em;
 				font-size: -webkit-xxx-large;
 }
@@ -83,8 +84,8 @@ position:absolute;
 	width: 1300px;
 }
 .cediPic{
-	float: left; 
-	display: inline; 
+	float: left;
+	display: inline;
 	height: 600px;
 	width: 500px;
   transition: transform .25s ease;
@@ -95,8 +96,8 @@ position:absolute;
   transform:scale(1.5);
 }
 .kyriePic{
-	display: inline; 
- float: right; 
+	display: inline;
+ float: right;
   height: 600px;
   width: 400px;
   transition: transform .25s ease;
@@ -108,11 +109,11 @@ position:absolute;
 }
 .greekPic{
 
-	clear: both; 
-display: block; 
+	clear: both;
+display: block;
 height: 600px;
 	width: 350px;
-margin:auto; 
+margin:auto;
   transition: transform .25s ease;
 }
 .greekPic:hover  {
@@ -120,7 +121,7 @@ margin:auto;
   transform:scale(1.5);
 }
 .navbar {
-  background-color: #323f40;
+  background-color: #001538;
 }
 .navbar .navbar-brand {
   color: #d0e4e8;
@@ -137,7 +138,7 @@ margin:auto;
 }
 .navbar .navbar-text a:hover,
 .navbar .navbar-text a:focus {
-  color: #d6afa1; 
+  color: #d6afa1;
 }
 .navbar .navbar-nav .nav-link {
   color: #d0e4e8;
