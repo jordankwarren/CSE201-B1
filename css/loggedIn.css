@@ -30,6 +30,20 @@ position:absolute;
     height: 100px;
     text-align: center;
 }
+#playoff{
+  object-fit: fill;
+
+}
+.playoffTxt{
+  height: 700px;
+  width:1300px;
+  
+  position: relative;
+  color: black;
+
+      letter-spacing: 0.04em;
+      font-size: -webkit-xxx-large;
+}
 #highVid{
 	object-fit:fill;
 	height: 580px;
