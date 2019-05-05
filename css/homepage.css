@@ -26,10 +26,15 @@ position:absolute;
     height: 100px;
     text-align: center;
 }
+#highVid{
+	object-fit:fill;
+	height: 580px;
+	width: 1100px;
+}
 #highlight{
-		height: 800px;
+		height: 600px;
 		margin: 0 auto;
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 		position:relative;
 		color: transparent;
 		    -webkit-text-stroke: 1px white;
