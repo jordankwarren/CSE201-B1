@@ -37,7 +37,7 @@ position:absolute;
 }
 #highlight{
 
-	
+
 		height: 700px;
 		width:1300px;
 		margin: 0 auto;
@@ -111,7 +111,7 @@ position:absolute;
 
 	clear: both;
 display: block;
-height: 600px;
+height: 300px;
 	width: 350px;
 margin:auto;
   transition: transform .25s ease;
