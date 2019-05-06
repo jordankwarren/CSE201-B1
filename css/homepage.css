@@ -1,6 +1,7 @@
 #websitetitle{
 	height: 300px;
-	margin: 0 auto;
+	margin: auto;
+	text-align: center;
 	margin-bottom: 30px;
   margin-top: -80px;
 	position:relative;
