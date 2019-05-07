@@ -10,6 +10,7 @@
 body{
 	background-color: #b7d2ff;
 }
+
 #websitename{
 position:absolute;
 	color: black;
@@ -88,7 +89,7 @@ position:absolute;
 	display: inline;
  float: right;
   height: 600px;
-  width: 400px;
+  width: 350px;
   transition: transform .25s ease;
 
 }
@@ -100,7 +101,7 @@ position:absolute;
 
 	clear: both;
 display: block;
-height: 300px;
+height: 600px;
 	width: 350px;
 margin:auto;
   transition: transform .25s ease;
