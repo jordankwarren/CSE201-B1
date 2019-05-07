@@ -7,6 +7,17 @@
 	position:relative;
 	margin-left: -100px;
 }
+.scoresTxt{
+	font-size: -webkit-xxx-large
+}
+#score{
+	margin-bottom: 100px;
+	margin-top: 70px;
+}
+.scoresPic{
+	width:1100px;
+	height:300px;
+}
 body{
 	background-color: #b7d2ff;
 }
@@ -21,8 +32,9 @@ position:absolute;
     text-align: center;
 }
 #playoff{
+	margin-top: 70px;
   object-fit: fill;
-
+	margin-bottom: 100px;
 }
 .playoffTxt{
 
@@ -38,11 +50,10 @@ position:absolute;
 	width: 1100px;
 }
 #highlight{
-
-
+		margin-top: 70px;
 		height: 700px;
 		width:1300px;
-		margin: 0 auto;
+		margin: auto;
 		margin-bottom: 100px;
 		position:relative;
 		color: black;
