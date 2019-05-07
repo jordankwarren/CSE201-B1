@@ -1,24 +1,22 @@
 #websitetitle{
 	height: 300px;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 30px;
-  margin-top: -80px;
+
 	position:relative;
-	margin-left: -100px;
+	margin-bottom: 30px;
+	margin-top: -50px;
 }
 body{
 	background-color: #d1e2fc;
 }
 
 #websitename{
-position:absolute;
+position:relative;
 	color: black;
-	left:800px;
     top:150px;
     width: 500px;
     height: 100px;
     text-align: center;
+		margin-bottom: -80px;
 }
 #highVid{
 	object-fit:fill;
@@ -26,11 +24,9 @@ position:absolute;
 	width: 1100px;
 }
 #highlight{
-
-
 		height: 700px;
 		width:1300px;
-		margin: 0 auto;
+		margin-top: -20px;
 		margin-bottom: 100px;
 		position:relative;
 		color: black;

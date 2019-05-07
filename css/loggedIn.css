@@ -1,11 +1,9 @@
 #websitetitle{
 	height: 300px;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 30px;
-  margin-top: -80px;
+
 	position:relative;
-	margin-left: -100px;
+	margin-bottom: 30px;
+	margin-top: -50px;
 }
 .scoresTxt{
 	font-size: -webkit-xxx-large
@@ -23,13 +21,12 @@ body{
 }
 
 #websitename{
-position:absolute;
-	color: black;
-	left:800px;
-    top:150px;
-    width: 500px;
-    height: 100px;
-    text-align: center;
+	position:relative;
+		color: black;
+	    top:150px;
+	    width: 500px;
+	    height: 100px;
+	    text-align: center;
 }
 #playoff{
 	margin-top: 70px;
