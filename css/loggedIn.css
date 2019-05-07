@@ -19,7 +19,7 @@
 	height:300px;
 }
 body{
-	background-color: #b7d2ff;
+	background-color: #d1e2fc;
 }
 
 #websitename{
@@ -134,7 +134,7 @@ margin:auto;
   transform:scale(1.5);
 }
 .navbar-default {
-  background-color: #341511;
+  background-color: #032b6b;
   border-color: #ebf7f7;
 }
 .navbar-default .navbar-brand {
